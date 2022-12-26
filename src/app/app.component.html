@@ -1,14 +1,22 @@
-<h1>Proyecto de Angular</h1>
 
-<nav>
-<ul>
-    <li><a [routerLink]="['/sobre-mi']">About me</a></li>    
-    <li><a [routerLink]="['/crear-proyecto']">Create</a></li>
-    <li><a [routerLink]="['/proyectos']">Projects</a></li>
-    <li><a [routerLink]="['/contacto']">Contact</a></li>
-</ul>
-</nav>
+<header>
+    <ul>
+        <li><a [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">About me</a></li>    
+        <li><a [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Create</a></li>
+        <li id="logo"><a href="#">DZO!</a></li>
+        <li><a [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Projects</a></li>
+        <li><a [routerLink]="['/contacto']" [routerLinkActive]="['actived']">Contact</a></li>
+    </ul>
+</header>
+
+<section id="content">
 
 
-<p>By Danielazo</p>
+
 <router-outlet></router-outlet>
+
+</section>
+
+<footer>
+    Mi primer porfolio de JavaScript  &copy;
+</footer>
