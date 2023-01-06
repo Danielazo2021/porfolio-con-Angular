@@ -1,1 +1,34 @@
-<p>contact works!</p>
+
+
+<div class="container">
+<h1>Componente de contacto</h1>
+
+
+<div id="texto" #textos>
+    <p appResaltado>
+      ingrese el tamaño de slider en px y presione cargar, luego para redimensionarlo debe tocar borrar y cargar el nuevo valor!!
+
+    </p>
+</div>
+
+
+<br><br><br><br><br>
+
+Tamaño del slider
+<input type="number" [(ngModel)]="widthSlider">
+<br>
+<button (click)="cargarSlider()">Cargar Slider</button>
+<br>
+<button (click)="borrarSlider()">Borrar Slider</button>
+
+<div *ngIf="anchuraToSlider > 0">
+<slider [anchura]="anchuraToSlider"
+        [etiquetas]="captions"
+        (conseguirAutor)="getAutor($event)"
+
+></slider>
+</div>
+<div *ngIf="autor">
+{{autor.nombre + ',  ' + autor.linkedin}}
+</div>
+</div>

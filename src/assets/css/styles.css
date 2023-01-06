@@ -309,3 +309,14 @@ form input[disabled]{
     font-weight: bold;
     margin-top: 20px;
 }
+
+.bx-wrapper{
+    margin: auto;
+}
+.galeria{
+    margin: auto;
+    padding: auto;
+    
+    width: 100%;
+    height: auto;
+}
